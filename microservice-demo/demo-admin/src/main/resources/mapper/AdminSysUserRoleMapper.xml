@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.com.bluemoon.admin.mapper.AdminSysUserRoleMapper" >
+  <resultMap id="BaseResultMap" type="cn.com.bluemoon.admin.domain.model.AdminSysUserRole" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="user_id" property="userId" jdbcType="VARCHAR" />
+    <id column="role_id" property="roleId" jdbcType="BIGINT" />
+    <result column="role_code" property="roleCode" jdbcType="VARCHAR" />
+    <result column="create_user" property="createUser" jdbcType="VARCHAR" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  
+  <select id="getUnauthorizedRoleList"  parameterType="string" resultType="map">
+    <![CDATA[
+    	 SELECT role_id as id ,role_name as text,role_code as `code` 
+    	 FROM `admin_sys_role` where role_id not in(select role_id from admin_sys_user_role 
+    	 where user_id=#{user_id,jdbcType=VARCHAR})
+	]]>
+  </select>
+ 	<select id="getAuthorizedRoleList"  parameterType="string" resultType="map">
+    <![CDATA[
+	    select t1.role_id as id ,t2.role_name as text,t1.role_code as `code` 
+	    from admin_sys_user_role t1 left join admin_sys_role t2 on t1.role_id=t2.role_id 
+	    where user_id=#{user_id,jdbcType=VARCHAR}
+	]]>
+  </select>
+  
+  <!-- 插入或者更新授权记录 -->
+  <insert id="replaceInto" parameterType="cn.com.bluemoon.admin.domain.vo.SysUserRoleVo" >
+    replace into admin_sys_user_role (user_id, role_id, role_code, 
+      create_user, create_time)
+    values (#{userId,jdbcType=VARCHAR}, #{roleId,jdbcType=VARCHAR}, #{roleCode,jdbcType=VARCHAR}, 
+      #{createUser,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP})
+  </insert>
+  
+  <select id="getAuthorizedRoleListThroughFilter"  parameterType="map" resultType="map">
+    <![CDATA[
+	    select t1.role_id as id ,t2.role_name as text,t1.role_code as `code` 
+	    from admin_sys_user_role t1 left join admin_sys_role t2 on t1.role_id=t2.role_id 
+	    where user_id=#{operatorId,jdbcType=VARCHAR}
+	    and t1.create_user <>#{exceptUserId,jdbcType=VARCHAR}
+	    and t1.create_user <>#{exceptUserCode,jdbcType=VARCHAR}
+	    and t2.role_name is not null
+	    and t1.role_id in (
+			select tb.role_id from admin_sys_user_deleg_role tb
+			where tb.user_id = #{operationUser,jdbcType=VARCHAR}
+		)
+	]]>
+  </select>
+</mapper>

@@ -1,0 +1,15 @@
+# 配置管理后台接口服务发现
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 30000
+ribbon.eureka.enabled: true
+
+zuul: 
+  host: 
+    maxTotalConnections: 400
+    maxPerRouteConnections: 20
+  semaphore: 
+    max-semaphores: 256
+  prefix: /demo
+
+zuul.routes.user.path: /user/**
+zuul.routes.user.serviceId: demo-service-user
+zuul.routes.user.stripPrefix: false

@@ -1,0 +1,39 @@
+server:
+  port: 8888
+
+#spring.profiles:
+#  active: native
+
+spring.cloud.config:
+  server:
+    git:
+      uri: http://192.168.240.26/moonMall/bm-microservice-framework.git # 配置git仓库的地址
+      searchPaths: /microservice-demo/demo-config-repo         # git仓库地址下的相对地址，可以配置多个，用,分割。
+      username: tanhongjie                                     # git仓库的账号
+      password: 753951+ab                                      # git仓库的密码        
+      repos: 
+        mdm: 
+          pattern: mdm-*
+          cloneOnStart: true
+          uri: http://192.168.240.26/moonMall/bluemoon-mdm.git
+          searchPaths: /mdm-project/mdm-config-repo
+          username: tanhongjie
+          password: 753951+ab
+        wm: 
+          pattern: wm-*
+          cloneOnStart: true
+          uri: http://192.168.240.26/moonMall/bluemoon-wm.git
+          searchPaths: /bluemoon-wm/wm-config-repo
+          username: tanhongjie
+          password: 753951+ab
+#    native:
+#      searchLocations: file:D:\\eclipse\\workspace6\\microservice-framework\\microservice-demo\\demo-config-repo
+
+
+#security:
+#  user:
+#    name: user
+#    password: ${CONFIG_SERVER_PASSWORD:password}
+#management:
+#  security:
+#    enabled: false

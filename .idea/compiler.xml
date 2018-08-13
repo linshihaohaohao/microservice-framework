@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="demo-common" />
+        <module name="demo-gateway" />
+        <module name="ms-base-config-server" />
+        <module name="ms-common-hibernate" />
+        <module name="ms-common-lock" />
+        <module name="ms-common-mongodb" />
+        <module name="ms-common-mybatis" />
+        <module name="ms-common-redis" />
+        <module name="ms-common-utils" />
+        <module name="ms-common-zookeeper" />
+        <module name="mybatis-generator" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="demo-admin" target="1.8" />
+      <module name="demo-common" target="1.8" />
+      <module name="demo-gateway" target="1.8" />
+      <module name="demo-service-user" target="1.8" />
+      <module name="microservice-base" target="1.8" />
+      <module name="microservice-common" target="1.8" />
+      <module name="microservice-demo" target="1.8" />
+      <module name="microservice-framework" target="1.8" />
+      <module name="microservice-tool" target="1.8" />
+      <module name="ms-base-config-server" target="1.8" />
+      <module name="ms-base-job-client" target="1.8" />
+      <module name="ms-common-hibernate" target="1.8" />
+      <module name="ms-common-lock" target="1.8" />
+      <module name="ms-common-mongodb" target="1.8" />
+      <module name="ms-common-mybatis" target="1.8" />
+      <module name="ms-common-redis" target="1.8" />
+      <module name="ms-common-utils" target="1.8" />
+      <module name="ms-common-zookeeper" target="1.8" />
+      <module name="mybatis-generator" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

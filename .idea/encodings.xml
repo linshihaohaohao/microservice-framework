@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservice-base" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservice-base/ms-base-config-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservice-base/ms-base-job-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservice-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservice-common/ms-common-hibernate" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservice-common/ms-common-lock" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservice-common/ms-common-mongodb" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservice-common/ms-common-mybatis" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservice-common/ms-common-redis" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservice-common/ms-common-utils" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservice-common/ms-common-zookeeper" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservice-demo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservice-demo/demo-admin" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservice-demo/demo-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservice-demo/demo-gateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservice-demo/demo-service-user" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservice-tool" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservice-tool/mybatis-generator" charset="UTF-8" />
+  </component>
+</project>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>cn.com.bluemoon</groupId>
+    <artifactId>microservice-framework</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>microservice-common</artifactId>
+  <packaging>pom</packaging>
+  <modules>
+    <module>ms-common-hibernate</module>
+    <module>ms-common-mybatis</module>
+    <module>ms-common-redis</module>
+    <module>ms-common-mongodb</module>
+    <module>ms-common-utils</module>
+    <module>ms-common-zookeeper</module>
+    <module>ms-common-lock</module>
+  </modules>
+</project>

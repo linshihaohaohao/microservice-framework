@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: demo-gateway
+  profiles:
+    active: dev,zuul
+  cloud:
+    config:
+      uri: http://localhost:8888
+#      username: root
+#      password: root
+#      label: test
+      failFast: true

@@ -1,0 +1,8 @@
+server:
+  port: 5555
+
+spring.http:
+  multipart:
+    maxFileSize: 5Mb
+    maxRequestSize: 10Mb
+    location: /tmp

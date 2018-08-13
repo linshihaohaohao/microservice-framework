@@ -1,0 +1,55 @@
+eureka:
+  instance:
+    preferIpAddress: true
+    instanceId: ${spring.cloud.client.ipAddress}:${server.port}
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.240.2:1111/eureka/
+    healthCheck:
+      enabled: true
+
+spring.dubbo:
+  registry:
+    address: zookeeper://192.168.240.15:2181?backup=192.168.240.15:2182,192.168.240.15:2183
+  application:
+    name: ${spring.application.name}
+    owner: thj
+  scan: cn.com.bluemoon
+
+# 使用druid数据源
+spring.datasource:
+  type: com.alibaba.druid.pool.DruidDataSource
+  driver-class-name: com.mysql.jdbc.Driver
+  filters: stat
+  maxActive: 20
+  initialSize: 1
+  maxWait: 60000
+  minIdle: 1
+  timeBetweenEvictionRunsMillis: 60000
+  minEvictableIdleTimeMillis: 300000
+  validationQuery: select 'x'
+  testWhileIdle: true
+  testOnBorrow: false
+  testOnReturn: false
+  poolPreparedStatements: true
+  maxOpenPreparedStatements: 20
+  removeAbandoned: true
+  removeAbandonedTimeout: 1800
+
+spring.redis: 
+  timeout: 100000
+  testOnBorrow: true
+  pool: 
+    min-idle: 300
+    max-active: 600
+    max-wait: 1000
+
+xxlJob:
+  registUrl: http://127.0.0.1:8080/ms-base-job-server/
+  accessToken: 
+  executor: 
+    appname: ${spring.application.name} 
+    ip: ${spring.cloud.client.ipAddress}
+
+logging:
+  level: info

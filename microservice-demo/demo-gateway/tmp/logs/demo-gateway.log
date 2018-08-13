@@ -1,0 +1,653 @@
+2018-01-16 13:40:02,718:INFO main (AbstractApplicationContext.java:582) - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@308a6984: startup date [Tue Jan 16 13:40:02 CST 2018]; root of context hierarchy
+2018-01-16 13:40:02,972:INFO background-preinit (Version.java:30) - HV000001: Hibernate Validator 5.3.5.Final
+2018-01-16 13:40:03,381:INFO main (AutowiredAnnotationBeanPostProcessor.java:155) - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-16 13:40:03,468:INFO main (PostProcessorRegistrationDelegate.java:325) - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$6cc10b0f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-16 13:40:05,812:INFO main (ConfigServicePropertySourceLocator.java:80) - Fetching config from server at: http://localhost:8888
+2018-01-16 13:40:07,470:INFO main (ConfigServicePropertySourceLocator.java:94) - Located environment: name=demo-gateway, profiles=[dev], label=null, version=null, state=null
+2018-01-16 13:40:07,470:INFO main (PropertySourceBootstrapConfiguration.java:93) - Located property source: CompositePropertySource [name='configService', propertySources=[MapPropertySource [name='file:D://eclipse//workspace6//microservice-framework//microservice-demo//demo-config-repo/demo-gateway.yml'], MapPropertySource [name='file:D://eclipse//workspace6//microservice-framework//microservice-demo//demo-config-repo/application.yml']]]
+2018-01-16 13:40:07,902:INFO main (SpringApplication.java:641) - The following profiles are active: dev
+2018-01-16 13:40:08,011:INFO main (AbstractApplicationContext.java:582) - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3dd4a6fa: startup date [Tue Jan 16 13:40:08 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@308a6984
+2018-01-16 13:40:09,955:INFO main (DefaultListableBeanFactory.java:828) - Overriding bean definition for bean 'hystrixFeature' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.netflix.hystrix.HystrixCircuitBreakerConfiguration$HystrixWebConfiguration; factoryMethodName=hystrixFeature; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/netflix/hystrix/HystrixCircuitBreakerConfiguration$HystrixWebConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.netflix.hystrix.HystrixCircuitBreakerConfiguration; factoryMethodName=hystrixFeature; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/netflix/hystrix/HystrixCircuitBreakerConfiguration.class]]
+2018-01-16 13:40:10,387:WARN main (ConfigurationClassPostProcessor.java:373) - Cannot enhance @Configuration bean definition 'refreshScope' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2018-01-16 13:40:10,677:INFO main (GenericScope.java:263) - BeanFactory id=e446840a-bec6-3171-93b8-0f6324c6d0bc
+2018-01-16 13:40:10,712:INFO main (AutowiredAnnotationBeanPostProcessor.java:155) - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-16 13:40:11,157:INFO main (PostProcessorRegistrationDelegate.java:325) - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$6cc10b0f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-16 13:40:12,443:INFO main (TomcatEmbeddedServletContainer.java:89) - Tomcat initialized with port(s): 5555 (http)
+2018-01-16 13:40:12,461:INFO main (DirectJDKLog.java:179) - Starting service Tomcat
+2018-01-16 13:40:12,465:INFO main (DirectJDKLog.java:179) - Starting Servlet Engine: Apache Tomcat/8.5.14
+2018-01-16 13:40:12,674:INFO localhost-startStop-1 (DirectJDKLog.java:179) - Initializing Spring embedded WebApplicationContext
+2018-01-16 13:40:12,674:INFO localhost-startStop-1 (EmbeddedWebApplicationContext.java:276) - Root WebApplicationContext: initialization completed in 4663 ms
+2018-01-16 13:40:14,277:INFO localhost-startStop-1 (InetUtils.java:154) - Cannot determine local hostname
+2018-01-16 13:40:15,312:WARN localhost-startStop-1 (URLConfigurationSource.java:121) - No URLs will be polled as dynamic configuration sources.
+2018-01-16 13:40:15,313:INFO localhost-startStop-1 (URLConfigurationSource.java:122) - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-01-16 13:40:15,325:INFO localhost-startStop-1 (DynamicPropertyFactory.java:281) - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@77124f1f
+2018-01-16 13:40:15,923:INFO localhost-startStop-1 (ServletRegistrationBean.java:190) - Mapping servlet: 'zuulServlet' to [/zuul/*]
+2018-01-16 13:40:15,925:INFO localhost-startStop-1 (ServletRegistrationBean.java:190) - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-16 13:40:15,931:INFO localhost-startStop-1 (AbstractFilterRegistrationBean.java:258) - Mapping filter: 'metricsFilter' to: [/*]
+2018-01-16 13:40:15,931:INFO localhost-startStop-1 (AbstractFilterRegistrationBean.java:258) - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-16 13:40:15,932:INFO localhost-startStop-1 (AbstractFilterRegistrationBean.java:258) - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-16 13:40:15,932:INFO localhost-startStop-1 (AbstractFilterRegistrationBean.java:258) - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-16 13:40:15,932:INFO localhost-startStop-1 (AbstractFilterRegistrationBean.java:258) - Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-16 13:40:15,932:INFO localhost-startStop-1 (AbstractFilterRegistrationBean.java:258) - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2018-01-16 13:40:15,932:INFO localhost-startStop-1 (AbstractFilterRegistrationBean.java:258) - Mapping filter: 'applicationContextIdFilter' to: [/*]
+2018-01-16 13:40:15,959:INFO localhost-startStop-1 (ZuulFilterInitializer.java:50) - Starting filter initializer context listener
+2018-01-16 13:40:17,791:INFO main (RequestMappingHandlerAdapter.java:534) - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3dd4a6fa: startup date [Tue Jan 16 13:40:08 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@308a6984
+2018-01-16 13:40:18,053:INFO main (AbstractHandlerMethodMapping.java:543) - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-16 13:40:18,055:INFO main (AbstractHandlerMethodMapping.java:543) - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-16 13:40:18,202:INFO main (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-16 13:40:18,203:INFO main (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-16 13:40:18,323:INFO main (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-16 13:40:19,572:INFO main (AbstractHandlerMethodMapping.java:543) - Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2018-01-16 13:40:19,573:INFO main (AbstractHandlerMethodMapping.java:543) - Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-16 13:40:19,574:INFO main (AbstractHandlerMethodMapping.java:543) - Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2018-01-16 13:40:19,575:INFO main (AbstractHandlerMethodMapping.java:543) - Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-16 13:40:19,577:INFO main (AbstractHandlerMethodMapping.java:543) - Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-16 13:40:19,578:INFO main (AbstractHandlerMethodMapping.java:543) - Mapped "{[/archaius || /archaius.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-16 13:40:19,579:INFO main (AbstractHandlerMethodMapping.java:543) - Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
+2018-01-16 13:40:19,580:INFO main (AbstractHandlerMethodMapping.java:543) - Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+2018-01-16 13:40:19,581:INFO main (AbstractHandlerMethodMapping.java:543) - Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2018-01-16 13:40:19,582:INFO main (AbstractHandlerMethodMapping.java:543) - Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-16 13:40:19,582:INFO main (AbstractHandlerMethodMapping.java:543) - Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-01-16 13:40:19,585:INFO main (AbstractHandlerMethodMapping.java:543) - Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2018-01-16 13:40:19,586:INFO main (AbstractHandlerMethodMapping.java:543) - Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-16 13:40:19,588:INFO main (AbstractHandlerMethodMapping.java:543) - Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-16 13:40:19,589:INFO main (AbstractHandlerMethodMapping.java:543) - Mapped "{[/hystrix.stream/**]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.cloud.netflix.endpoint.ServletWrappingEndpoint.handle(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2018-01-16 13:40:19,590:INFO main (AbstractHandlerMethodMapping.java:543) - Mapped "{[/restart || /restart.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.restart.RestartMvcEndpoint.invoke()
+2018-01-16 13:40:19,591:INFO main (AbstractHandlerMethodMapping.java:543) - Mapped "{[/features || /features.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-16 13:40:19,592:INFO main (AbstractHandlerMethodMapping.java:543) - Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-16 13:40:19,594:INFO main (AbstractHandlerMethodMapping.java:543) - Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2018-01-16 13:40:19,595:INFO main (AbstractHandlerMethodMapping.java:543) - Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-16 13:40:19,596:INFO main (AbstractHandlerMethodMapping.java:543) - Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-16 13:40:19,597:INFO main (AbstractHandlerMethodMapping.java:543) - Mapped "{[/resume || /resume.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-01-16 13:40:19,602:INFO main (AbstractHandlerMethodMapping.java:543) - Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2018-01-16 13:40:19,604:INFO main (AbstractHandlerMethodMapping.java:543) - Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2018-01-16 13:40:19,604:INFO main (AbstractHandlerMethodMapping.java:543) - Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-16 13:40:19,607:INFO main (AbstractHandlerMethodMapping.java:543) - Mapped "{[/routes || /routes.json],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.String> org.springframework.cloud.netflix.zuul.RoutesEndpoint.reset()
+2018-01-16 13:40:19,608:INFO main (AbstractHandlerMethodMapping.java:543) - Mapped "{[/routes || /routes.json],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.String> org.springframework.cloud.netflix.zuul.RoutesEndpoint.getRoutes()
+2018-01-16 13:40:19,609:INFO main (AbstractHandlerMethodMapping.java:543) - Mapped "{[/pause || /pause.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-01-16 13:40:20,019:WARN main (URLConfigurationSource.java:121) - No URLs will be polled as dynamic configuration sources.
+2018-01-16 13:40:20,020:INFO main (URLConfigurationSource.java:122) - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-01-16 13:40:20,409:INFO main (MBeanExporter.java:431) - Registering beans for JMX exposure on startup
+2018-01-16 13:40:20,422:INFO main (MBeanExporter.java:916) - Bean with name 'zuulEndpoint' has been autodetected for JMX exposure
+2018-01-16 13:40:20,424:INFO main (MBeanExporter.java:916) - Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-01-16 13:40:20,425:INFO main (MBeanExporter.java:916) - Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-01-16 13:40:20,427:INFO main (MBeanExporter.java:916) - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-01-16 13:40:20,428:INFO main (MBeanExporter.java:916) - Bean with name 'refreshEndpoint' has been autodetected for JMX exposure
+2018-01-16 13:40:20,429:INFO main (MBeanExporter.java:916) - Bean with name 'restartEndpoint' has been autodetected for JMX exposure
+2018-01-16 13:40:20,433:INFO main (MBeanExporter.java:678) - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-01-16 13:40:20,451:INFO main (MBeanExporter.java:678) - Located managed bean 'restartEndpoint': registering with JMX server as MBean [org.springframework.cloud.context.restart:name=restartEndpoint,type=RestartEndpoint]
+2018-01-16 13:40:20,467:INFO main (MBeanExporter.java:678) - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-01-16 13:40:20,491:INFO main (MBeanExporter.java:678) - Located managed bean 'zuulEndpoint': registering with JMX server as MBean [org.springframework.cloud.netflix.zuul:name=zuulEndpoint,type=RoutesEndpoint]
+2018-01-16 13:40:20,495:INFO main (MBeanExporter.java:678) - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=3dd4a6fa,type=ConfigurationPropertiesRebinder]
+2018-01-16 13:40:20,502:INFO main (MBeanExporter.java:678) - Located managed bean 'refreshEndpoint': registering with JMX server as MBean [org.springframework.cloud.endpoint:name=refreshEndpoint,type=RefreshEndpoint]
+2018-01-16 13:40:20,503:INFO main (MBeanExporter.java:431) - Registering beans for JMX exposure on startup
+2018-01-16 13:40:20,854:INFO main (DefaultLifecycleProcessor.java:343) - Starting beans in phase 0
+2018-01-16 13:40:20,868:INFO main (InstanceInfoFactory.java:70) - Setting initial instance status as: STARTING
+2018-01-16 13:40:21,159:INFO main (DiscoveryJerseyProvider.java:70) - Using JSON encoding codec LegacyJacksonJson
+2018-01-16 13:40:21,160:INFO main (DiscoveryJerseyProvider.java:71) - Using JSON decoding codec LegacyJacksonJson
+2018-01-16 13:40:21,723:INFO main (DiscoveryJerseyProvider.java:80) - Using XML encoding codec XStreamXml
+2018-01-16 13:40:21,730:INFO main (DiscoveryJerseyProvider.java:81) - Using XML decoding codec XStreamXml
+2018-01-16 13:40:22,308:INFO main (ConfigClusterResolver.java:43) - Resolving eureka endpoints via configuration
+2018-01-16 13:40:22,596:INFO main (DiscoveryClient.java:937) - Disable delta property : false
+2018-01-16 13:40:22,597:INFO main (DiscoveryClient.java:938) - Single vip registry refresh property : null
+2018-01-16 13:40:22,598:INFO main (DiscoveryClient.java:939) - Force full registry fetch : false
+2018-01-16 13:40:22,598:INFO main (DiscoveryClient.java:940) - Application is null : false
+2018-01-16 13:40:22,598:INFO main (DiscoveryClient.java:941) - Registered Applications size is zero : true
+2018-01-16 13:40:22,599:INFO main (DiscoveryClient.java:943) - Application version is -1: true
+2018-01-16 13:40:22,599:INFO main (DiscoveryClient.java:1026) - Getting all instance registry info from the eureka server
+2018-01-16 13:40:22,793:INFO main (DiscoveryClient.java:1035) - The response status is 200
+2018-01-16 13:40:22,797:INFO main (DiscoveryClient.java:1261) - Starting heartbeat executor: renew interval is: 30
+2018-01-16 13:40:22,808:INFO main (InstanceInfoReplicator.java:59) - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-01-16 13:40:22,812:INFO main (DiscoveryClient.java:461) - Discovery Client initialized at timestamp 1516081222812 with initial instances count: 31
+2018-01-16 13:40:22,927:INFO main (EurekaDiscoveryClientConfiguration.java:100) - Registering application demo-gateway with eureka with status UP
+2018-01-16 13:40:22,929:INFO main (DiscoveryClient.java:1296) - Saw local status change event StatusChangeEvent [timestamp=1516081222929, current=UP, previous=STARTING]
+2018-01-16 13:40:22,934:INFO DiscoveryClient-InstanceInfoReplicator-0 (DiscoveryClient.java:812) - DiscoveryClient_DEMO-GATEWAY/10.0.0.81:5555: registering service...
+2018-01-16 13:40:22,943:INFO main (MBeanExporter.java:678) - Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint]
+2018-01-16 13:40:22,977:INFO main (MBeanExporter.java:678) - Located managed bean 'featuresEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=featuresEndpoint]
+2018-01-16 13:40:22,991:INFO main (MBeanExporter.java:678) - Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+2018-01-16 13:40:22,994:INFO main (MBeanExporter.java:678) - Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+2018-01-16 13:40:22,998:INFO DiscoveryClient-InstanceInfoReplicator-0 (DiscoveryClient.java:821) - DiscoveryClient_DEMO-GATEWAY/10.0.0.81:5555 - registration status: 204
+2018-01-16 13:40:23,002:INFO main (MBeanExporter.java:678) - Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+2018-01-16 13:40:23,007:INFO main (MBeanExporter.java:678) - Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+2018-01-16 13:40:23,013:INFO main (MBeanExporter.java:678) - Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+2018-01-16 13:40:23,018:INFO main (MBeanExporter.java:678) - Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint]
+2018-01-16 13:40:23,028:INFO main (MBeanExporter.java:678) - Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+2018-01-16 13:40:23,032:INFO main (MBeanExporter.java:678) - Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+2018-01-16 13:40:23,036:INFO main (MBeanExporter.java:678) - Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+2018-01-16 13:40:23,039:INFO main (MBeanExporter.java:678) - Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+2018-01-16 13:40:23,042:INFO main (MBeanExporter.java:678) - Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+2018-01-16 13:40:23,045:INFO main (MBeanExporter.java:678) - Located managed bean 'archaiusEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=archaiusEndpoint]
+2018-01-16 13:40:23,049:INFO main (DefaultLifecycleProcessor.java:343) - Starting beans in phase 2147483647
+2018-01-16 13:40:23,736:INFO main (HystrixCircuitBreakerConfiguration.java:138) - Starting poller
+2018-01-16 13:40:24,317:INFO main (DirectJDKLog.java:179) - Initializing ProtocolHandler ["http-nio-5555"]
+2018-01-16 13:40:24,345:INFO main (DirectJDKLog.java:179) - Starting ProtocolHandler ["http-nio-5555"]
+2018-01-16 13:40:24,362:INFO main (DirectJDKLog.java:179) - Using a shared selector for servlet write/read
+2018-01-16 13:40:24,429:INFO main (TomcatEmbeddedServletContainer.java:198) - Tomcat started on port(s): 5555 (http)
+2018-01-16 13:40:24,437:INFO main (EurekaDiscoveryClientConfiguration.java:168) - Updating port to 5555
+2018-01-16 13:40:24,444:INFO main (StartupInfoLogger.java:57) - Started ApiGatewayApplication in 24.039 seconds (JVM running for 25.959)
+2018-01-16 13:41:30,434:INFO http-nio-5555-exec-10 (DirectJDKLog.java:179) - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-16 13:41:30,434:INFO http-nio-5555-exec-10 (FrameworkServlet.java:489) - FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-16 13:41:30,482:INFO http-nio-5555-exec-10 (FrameworkServlet.java:508) - FrameworkServlet 'dispatcherServlet': initialization completed in 48 ms
+2018-01-16 13:41:30,507:INFO http-nio-5555-exec-10 (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/service-mall-comment/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-01-16 13:41:30,508:INFO http-nio-5555-exec-10 (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/service-washmall-order/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-01-16 13:41:30,508:INFO http-nio-5555-exec-10 (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/api-gateway-washingmaster/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-01-16 13:41:30,508:INFO http-nio-5555-exec-10 (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/service-washmall-logistics/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-01-16 13:41:30,508:INFO http-nio-5555-exec-10 (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/service-mall-mooncard/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-01-16 13:41:30,509:INFO http-nio-5555-exec-10 (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/service-interactive-multimedia/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-01-16 13:41:30,509:INFO http-nio-5555-exec-10 (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/demo-service-user/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-01-16 13:41:30,509:INFO http-nio-5555-exec-10 (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/service-washmall-pricetype/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-01-16 13:41:30,509:INFO http-nio-5555-exec-10 (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/service-b2b-user/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-01-16 13:41:30,510:INFO http-nio-5555-exec-10 (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/b2bmalladmin/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-01-16 13:41:30,510:INFO http-nio-5555-exec-10 (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/service-forum/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-01-16 13:41:30,510:INFO http-nio-5555-exec-10 (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/service-b2b-item/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-01-16 13:41:30,511:INFO http-nio-5555-exec-10 (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/api-gateway-b2bmall/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-01-16 13:41:30,511:INFO http-nio-5555-exec-10 (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/service-washingmaster/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-01-16 13:41:30,512:INFO http-nio-5555-exec-10 (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/service-mall-pay/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-01-16 13:41:30,512:INFO http-nio-5555-exec-10 (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/service-b2b-common/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-01-16 13:41:30,513:INFO http-nio-5555-exec-10 (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/service-b2b-activity/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-01-16 13:41:30,514:INFO http-nio-5555-exec-10 (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/service-mall-share/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-01-16 13:41:30,514:INFO http-nio-5555-exec-10 (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/service-b2b-order/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-01-16 13:41:30,515:INFO http-nio-5555-exec-10 (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/service-washmall-enterprise/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-01-16 13:41:30,515:INFO http-nio-5555-exec-10 (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/service-mall-order/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-01-16 13:41:30,515:INFO http-nio-5555-exec-10 (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/service-mall-user/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-01-16 13:41:30,515:INFO http-nio-5555-exec-10 (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/service-moonmall-order/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-01-16 13:41:30,516:INFO http-nio-5555-exec-10 (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/service-mall-activity/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-01-16 13:41:30,516:INFO http-nio-5555-exec-10 (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/service-mall-shoppingcart/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-01-16 13:41:30,516:INFO http-nio-5555-exec-10 (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/service-moonmall-item/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-01-16 13:41:30,516:INFO http-nio-5555-exec-10 (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/service-app-manager/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-01-16 13:41:30,517:INFO http-nio-5555-exec-10 (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/service-washmall-appointment/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-01-16 13:41:30,517:INFO http-nio-5555-exec-10 (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/api-gateway/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-01-16 13:41:30,517:INFO http-nio-5555-exec-10 (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/service-smart-talk/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-01-16 13:42:46,816:INFO main (AbstractApplicationContext.java:582) - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@e27ba81: startup date [Tue Jan 16 13:42:46 CST 2018]; root of context hierarchy
+2018-01-16 13:42:47,021:INFO background-preinit (Version.java:30) - HV000001: Hibernate Validator 5.3.5.Final
+2018-01-16 13:42:47,392:INFO main (AutowiredAnnotationBeanPostProcessor.java:155) - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-16 13:42:47,464:INFO main (PostProcessorRegistrationDelegate.java:325) - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e237d035] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-16 13:42:49,494:INFO main (ConfigServicePropertySourceLocator.java:80) - Fetching config from server at: http://localhost:8888
+2018-01-16 13:42:51,102:INFO main (ConfigServicePropertySourceLocator.java:94) - Located environment: name=demo-gateway, profiles=[dev, zuul], label=null, version=null, state=null
+2018-01-16 13:42:51,103:INFO main (PropertySourceBootstrapConfiguration.java:93) - Located property source: CompositePropertySource [name='configService', propertySources=[MapPropertySource [name='file:D://eclipse//workspace6//microservice-framework//microservice-demo//demo-config-repo/demo-gateway-zuul.yml'], MapPropertySource [name='file:D://eclipse//workspace6//microservice-framework//microservice-demo//demo-config-repo/demo-gateway.yml'], MapPropertySource [name='file:D://eclipse//workspace6//microservice-framework//microservice-demo//demo-config-repo/application.yml']]]
+2018-01-16 13:42:51,220:INFO main (SpringApplication.java:641) - The following profiles are active: dev,zuul
+2018-01-16 13:42:51,258:INFO main (AbstractApplicationContext.java:582) - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@158f4cfe: startup date [Tue Jan 16 13:42:51 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@e27ba81
+2018-01-16 13:42:52,169:INFO main (DefaultListableBeanFactory.java:828) - Overriding bean definition for bean 'hystrixFeature' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.netflix.hystrix.HystrixCircuitBreakerConfiguration$HystrixWebConfiguration; factoryMethodName=hystrixFeature; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/netflix/hystrix/HystrixCircuitBreakerConfiguration$HystrixWebConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.netflix.hystrix.HystrixCircuitBreakerConfiguration; factoryMethodName=hystrixFeature; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/netflix/hystrix/HystrixCircuitBreakerConfiguration.class]]
+2018-01-16 13:42:52,670:WARN main (ConfigurationClassPostProcessor.java:373) - Cannot enhance @Configuration bean definition 'refreshScope' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2018-01-16 13:42:52,943:INFO main (GenericScope.java:263) - BeanFactory id=e446840a-bec6-3171-93b8-0f6324c6d0bc
+2018-01-16 13:42:52,970:INFO main (AutowiredAnnotationBeanPostProcessor.java:155) - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-16 13:42:53,202:INFO main (PostProcessorRegistrationDelegate.java:325) - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e237d035] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-16 13:42:54,332:INFO main (TomcatEmbeddedServletContainer.java:89) - Tomcat initialized with port(s): 5555 (http)
+2018-01-16 13:42:54,353:INFO main (DirectJDKLog.java:179) - Starting service Tomcat
+2018-01-16 13:42:54,355:INFO main (DirectJDKLog.java:179) - Starting Servlet Engine: Apache Tomcat/8.5.14
+2018-01-16 13:42:54,572:INFO localhost-startStop-1 (DirectJDKLog.java:179) - Initializing Spring embedded WebApplicationContext
+2018-01-16 13:42:54,573:INFO localhost-startStop-1 (EmbeddedWebApplicationContext.java:276) - Root WebApplicationContext: initialization completed in 3315 ms
+2018-01-16 13:42:56,190:INFO localhost-startStop-1 (InetUtils.java:154) - Cannot determine local hostname
+2018-01-16 13:42:57,154:WARN localhost-startStop-1 (URLConfigurationSource.java:121) - No URLs will be polled as dynamic configuration sources.
+2018-01-16 13:42:57,156:INFO localhost-startStop-1 (URLConfigurationSource.java:122) - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-01-16 13:42:57,168:INFO localhost-startStop-1 (DynamicPropertyFactory.java:281) - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@57503874
+2018-01-16 13:42:57,722:INFO localhost-startStop-1 (ServletRegistrationBean.java:190) - Mapping servlet: 'zuulServlet' to [/zuul/*]
+2018-01-16 13:42:57,725:INFO localhost-startStop-1 (ServletRegistrationBean.java:190) - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-16 13:42:57,734:INFO localhost-startStop-1 (AbstractFilterRegistrationBean.java:258) - Mapping filter: 'metricsFilter' to: [/*]
+2018-01-16 13:42:57,735:INFO localhost-startStop-1 (AbstractFilterRegistrationBean.java:258) - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-16 13:42:57,736:INFO localhost-startStop-1 (AbstractFilterRegistrationBean.java:258) - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-16 13:42:57,736:INFO localhost-startStop-1 (AbstractFilterRegistrationBean.java:258) - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-16 13:42:57,736:INFO localhost-startStop-1 (AbstractFilterRegistrationBean.java:258) - Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-16 13:42:57,736:INFO localhost-startStop-1 (AbstractFilterRegistrationBean.java:258) - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2018-01-16 13:42:57,737:INFO localhost-startStop-1 (AbstractFilterRegistrationBean.java:258) - Mapping filter: 'applicationContextIdFilter' to: [/*]
+2018-01-16 13:42:57,774:INFO localhost-startStop-1 (ZuulFilterInitializer.java:50) - Starting filter initializer context listener
+2018-01-16 13:42:59,406:INFO main (RequestMappingHandlerAdapter.java:534) - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@158f4cfe: startup date [Tue Jan 16 13:42:51 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@e27ba81
+2018-01-16 13:42:59,704:INFO main (AbstractHandlerMethodMapping.java:543) - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-16 13:42:59,707:INFO main (AbstractHandlerMethodMapping.java:543) - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-16 13:42:59,832:INFO main (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-16 13:42:59,833:INFO main (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-16 13:42:59,946:INFO main (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-16 13:43:01,206:INFO main (AbstractHandlerMethodMapping.java:543) - Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-16 13:43:01,207:INFO main (AbstractHandlerMethodMapping.java:543) - Mapped "{[/resume || /resume.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-01-16 13:43:01,208:INFO main (AbstractHandlerMethodMapping.java:543) - Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-16 13:43:01,209:INFO main (AbstractHandlerMethodMapping.java:543) - Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-16 13:43:01,210:INFO main (AbstractHandlerMethodMapping.java:543) - Mapped "{[/routes || /routes.json],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.String> org.springframework.cloud.netflix.zuul.RoutesEndpoint.reset()
+2018-01-16 13:43:01,211:INFO main (AbstractHandlerMethodMapping.java:543) - Mapped "{[/routes || /routes.json],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.String> org.springframework.cloud.netflix.zuul.RoutesEndpoint.getRoutes()
+2018-01-16 13:43:01,214:INFO main (AbstractHandlerMethodMapping.java:543) - Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2018-01-16 13:43:01,215:INFO main (AbstractHandlerMethodMapping.java:543) - Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-16 13:43:01,216:INFO main (AbstractHandlerMethodMapping.java:543) - Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-16 13:43:01,216:INFO main (AbstractHandlerMethodMapping.java:543) - Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-01-16 13:43:01,218:INFO main (AbstractHandlerMethodMapping.java:543) - Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2018-01-16 13:43:01,219:INFO main (AbstractHandlerMethodMapping.java:543) - Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
+2018-01-16 13:43:01,220:INFO main (AbstractHandlerMethodMapping.java:543) - Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+2018-01-16 13:43:01,225:INFO main (AbstractHandlerMethodMapping.java:543) - Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2018-01-16 13:43:01,226:INFO main (AbstractHandlerMethodMapping.java:543) - Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-16 13:43:01,230:INFO main (AbstractHandlerMethodMapping.java:543) - Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2018-01-16 13:43:01,231:INFO main (AbstractHandlerMethodMapping.java:543) - Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2018-01-16 13:43:01,232:INFO main (AbstractHandlerMethodMapping.java:543) - Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-16 13:43:01,234:INFO main (AbstractHandlerMethodMapping.java:543) - Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2018-01-16 13:43:01,235:INFO main (AbstractHandlerMethodMapping.java:543) - Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-16 13:43:01,236:INFO main (AbstractHandlerMethodMapping.java:543) - Mapped "{[/features || /features.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-16 13:43:01,240:INFO main (AbstractHandlerMethodMapping.java:543) - Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-16 13:43:01,241:INFO main (AbstractHandlerMethodMapping.java:543) - Mapped "{[/restart || /restart.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.restart.RestartMvcEndpoint.invoke()
+2018-01-16 13:43:01,242:INFO main (AbstractHandlerMethodMapping.java:543) - Mapped "{[/pause || /pause.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-01-16 13:43:01,244:INFO main (AbstractHandlerMethodMapping.java:543) - Mapped "{[/archaius || /archaius.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-16 13:43:01,246:INFO main (AbstractHandlerMethodMapping.java:543) - Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2018-01-16 13:43:01,247:INFO main (AbstractHandlerMethodMapping.java:543) - Mapped "{[/hystrix.stream/**]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.cloud.netflix.endpoint.ServletWrappingEndpoint.handle(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2018-01-16 13:43:01,248:INFO main (AbstractHandlerMethodMapping.java:543) - Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-01-16 13:43:01,621:WARN main (URLConfigurationSource.java:121) - No URLs will be polled as dynamic configuration sources.
+2018-01-16 13:43:01,621:INFO main (URLConfigurationSource.java:122) - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-01-16 13:43:01,967:INFO main (MBeanExporter.java:431) - Registering beans for JMX exposure on startup
+2018-01-16 13:43:01,979:INFO main (MBeanExporter.java:916) - Bean with name 'zuulEndpoint' has been autodetected for JMX exposure
+2018-01-16 13:43:01,980:INFO main (MBeanExporter.java:916) - Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-01-16 13:43:01,981:INFO main (MBeanExporter.java:916) - Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-01-16 13:43:01,983:INFO main (MBeanExporter.java:916) - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-01-16 13:43:01,984:INFO main (MBeanExporter.java:916) - Bean with name 'refreshEndpoint' has been autodetected for JMX exposure
+2018-01-16 13:43:01,985:INFO main (MBeanExporter.java:916) - Bean with name 'restartEndpoint' has been autodetected for JMX exposure
+2018-01-16 13:43:01,988:INFO main (MBeanExporter.java:678) - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-01-16 13:43:02,006:INFO main (MBeanExporter.java:678) - Located managed bean 'restartEndpoint': registering with JMX server as MBean [org.springframework.cloud.context.restart:name=restartEndpoint,type=RestartEndpoint]
+2018-01-16 13:43:02,022:INFO main (MBeanExporter.java:678) - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-01-16 13:43:02,043:INFO main (MBeanExporter.java:678) - Located managed bean 'zuulEndpoint': registering with JMX server as MBean [org.springframework.cloud.netflix.zuul:name=zuulEndpoint,type=RoutesEndpoint]
+2018-01-16 13:43:02,048:INFO main (MBeanExporter.java:678) - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=158f4cfe,type=ConfigurationPropertiesRebinder]
+2018-01-16 13:43:02,057:INFO main (MBeanExporter.java:678) - Located managed bean 'refreshEndpoint': registering with JMX server as MBean [org.springframework.cloud.endpoint:name=refreshEndpoint,type=RefreshEndpoint]
+2018-01-16 13:43:02,059:INFO main (MBeanExporter.java:431) - Registering beans for JMX exposure on startup
+2018-01-16 13:43:02,418:INFO main (DefaultLifecycleProcessor.java:343) - Starting beans in phase 0
+2018-01-16 13:43:02,438:INFO main (InstanceInfoFactory.java:70) - Setting initial instance status as: STARTING
+2018-01-16 13:43:02,688:INFO main (DiscoveryJerseyProvider.java:70) - Using JSON encoding codec LegacyJacksonJson
+2018-01-16 13:43:02,689:INFO main (DiscoveryJerseyProvider.java:71) - Using JSON decoding codec LegacyJacksonJson
+2018-01-16 13:43:02,886:INFO main (DiscoveryJerseyProvider.java:80) - Using XML encoding codec XStreamXml
+2018-01-16 13:43:02,890:INFO main (DiscoveryJerseyProvider.java:81) - Using XML decoding codec XStreamXml
+2018-01-16 13:43:03,316:INFO main (ConfigClusterResolver.java:43) - Resolving eureka endpoints via configuration
+2018-01-16 13:43:03,579:INFO main (DiscoveryClient.java:937) - Disable delta property : false
+2018-01-16 13:43:03,580:INFO main (DiscoveryClient.java:938) - Single vip registry refresh property : null
+2018-01-16 13:43:03,580:INFO main (DiscoveryClient.java:939) - Force full registry fetch : false
+2018-01-16 13:43:03,580:INFO main (DiscoveryClient.java:940) - Application is null : false
+2018-01-16 13:43:03,580:INFO main (DiscoveryClient.java:941) - Registered Applications size is zero : true
+2018-01-16 13:43:03,580:INFO main (DiscoveryClient.java:943) - Application version is -1: true
+2018-01-16 13:43:03,581:INFO main (DiscoveryClient.java:1026) - Getting all instance registry info from the eureka server
+2018-01-16 13:43:03,792:INFO main (DiscoveryClient.java:1035) - The response status is 200
+2018-01-16 13:43:03,797:INFO main (DiscoveryClient.java:1261) - Starting heartbeat executor: renew interval is: 30
+2018-01-16 13:43:03,803:INFO main (InstanceInfoReplicator.java:59) - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-01-16 13:43:03,808:INFO main (DiscoveryClient.java:461) - Discovery Client initialized at timestamp 1516081383807 with initial instances count: 32
+2018-01-16 13:43:03,925:INFO main (EurekaDiscoveryClientConfiguration.java:100) - Registering application demo-gateway with eureka with status UP
+2018-01-16 13:43:03,926:INFO main (DiscoveryClient.java:1296) - Saw local status change event StatusChangeEvent [timestamp=1516081383926, current=UP, previous=STARTING]
+2018-01-16 13:43:03,929:INFO DiscoveryClient-InstanceInfoReplicator-0 (DiscoveryClient.java:812) - DiscoveryClient_DEMO-GATEWAY/10.0.0.81:5555: registering service...
+2018-01-16 13:43:03,936:INFO main (MBeanExporter.java:678) - Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint]
+2018-01-16 13:43:03,949:INFO main (MBeanExporter.java:678) - Located managed bean 'featuresEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=featuresEndpoint]
+2018-01-16 13:43:03,986:INFO main (MBeanExporter.java:678) - Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+2018-01-16 13:43:03,992:INFO main (MBeanExporter.java:678) - Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+2018-01-16 13:43:03,996:INFO main (MBeanExporter.java:678) - Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+2018-01-16 13:43:04,000:INFO main (MBeanExporter.java:678) - Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+2018-01-16 13:43:04,007:INFO main (MBeanExporter.java:678) - Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+2018-01-16 13:43:04,010:INFO main (MBeanExporter.java:678) - Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint]
+2018-01-16 13:43:04,013:INFO DiscoveryClient-InstanceInfoReplicator-0 (DiscoveryClient.java:821) - DiscoveryClient_DEMO-GATEWAY/10.0.0.81:5555 - registration status: 204
+2018-01-16 13:43:04,022:INFO main (MBeanExporter.java:678) - Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+2018-01-16 13:43:04,026:INFO main (MBeanExporter.java:678) - Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+2018-01-16 13:43:04,029:INFO main (MBeanExporter.java:678) - Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+2018-01-16 13:43:04,033:INFO main (MBeanExporter.java:678) - Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+2018-01-16 13:43:04,037:INFO main (MBeanExporter.java:678) - Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+2018-01-16 13:43:04,039:INFO main (MBeanExporter.java:678) - Located managed bean 'archaiusEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=archaiusEndpoint]
+2018-01-16 13:43:04,042:INFO main (DefaultLifecycleProcessor.java:343) - Starting beans in phase 2147483647
+2018-01-16 13:43:04,049:INFO main (HystrixCircuitBreakerConfiguration.java:138) - Starting poller
+2018-01-16 13:43:04,113:INFO main (DirectJDKLog.java:179) - Initializing ProtocolHandler ["http-nio-5555"]
+2018-01-16 13:43:04,131:INFO main (DirectJDKLog.java:179) - Starting ProtocolHandler ["http-nio-5555"]
+2018-01-16 13:43:04,149:INFO main (DirectJDKLog.java:179) - Using a shared selector for servlet write/read
+2018-01-16 13:43:04,248:INFO main (TomcatEmbeddedServletContainer.java:198) - Tomcat started on port(s): 5555 (http)
+2018-01-16 13:43:04,251:INFO main (EurekaDiscoveryClientConfiguration.java:168) - Updating port to 5555
+2018-01-16 13:43:04,258:INFO main (StartupInfoLogger.java:57) - Started ApiGatewayApplication in 19.55 seconds (JVM running for 20.953)
+2018-01-16 13:43:10,571:INFO http-nio-5555-exec-1 (DirectJDKLog.java:179) - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-16 13:43:10,572:INFO http-nio-5555-exec-1 (FrameworkServlet.java:489) - FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-16 13:43:10,629:INFO http-nio-5555-exec-1 (FrameworkServlet.java:508) - FrameworkServlet 'dispatcherServlet': initialization completed in 57 ms
+2018-01-16 13:43:10,663:INFO http-nio-5555-exec-1 (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/demo/user/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-01-16 13:43:10,663:INFO http-nio-5555-exec-1 (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/demo/service-mall-comment/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-01-16 13:43:10,664:INFO http-nio-5555-exec-1 (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/demo/service-washmall-order/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-01-16 13:43:10,664:INFO http-nio-5555-exec-1 (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/demo/api-gateway-washingmaster/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-01-16 13:43:10,664:INFO http-nio-5555-exec-1 (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/demo/service-washmall-logistics/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-01-16 13:43:10,665:INFO http-nio-5555-exec-1 (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/demo/service-mall-mooncard/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-01-16 13:43:10,665:INFO http-nio-5555-exec-1 (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/demo/service-interactive-multimedia/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-01-16 13:43:10,665:INFO http-nio-5555-exec-1 (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/demo/demo-service-user-service-user/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-01-16 13:43:10,666:INFO http-nio-5555-exec-1 (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/demo/service-washmall-pricetype/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-01-16 13:43:10,666:INFO http-nio-5555-exec-1 (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/demo/service-b2b-user/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-01-16 13:43:10,667:INFO http-nio-5555-exec-1 (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/demo/b2bmalladmin/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-01-16 13:43:10,668:INFO http-nio-5555-exec-1 (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/demo/service-forum/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-01-16 13:43:10,668:INFO http-nio-5555-exec-1 (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/demo/service-b2b-item/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-01-16 13:43:10,668:INFO http-nio-5555-exec-1 (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/demo/api-gateway-b2bmall/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-01-16 13:43:10,669:INFO http-nio-5555-exec-1 (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/demo/service-washingmaster/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-01-16 13:43:10,669:INFO http-nio-5555-exec-1 (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/demo/service-mall-pay/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-01-16 13:43:10,669:INFO http-nio-5555-exec-1 (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/demo/service-b2b-common/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-01-16 13:43:10,670:INFO http-nio-5555-exec-1 (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/demo/service-b2b-activity/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-01-16 13:43:10,670:INFO http-nio-5555-exec-1 (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/demo/service-mall-share/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-01-16 13:43:10,670:INFO http-nio-5555-exec-1 (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/demo/service-b2b-order/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-01-16 13:43:10,671:INFO http-nio-5555-exec-1 (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/demo/service-washmall-enterprise/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-01-16 13:43:10,671:INFO http-nio-5555-exec-1 (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/demo/service-mall-order/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-01-16 13:43:10,673:INFO http-nio-5555-exec-1 (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/demo/service-mall-user/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-01-16 13:43:10,673:INFO http-nio-5555-exec-1 (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/demo/service-moonmall-order/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-01-16 13:43:10,674:INFO http-nio-5555-exec-1 (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/demo/service-mall-activity/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-01-16 13:43:10,674:INFO http-nio-5555-exec-1 (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/demo/service-mall-shoppingcart/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-01-16 13:43:10,675:INFO http-nio-5555-exec-1 (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/demo/service-moonmall-item/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-01-16 13:43:10,675:INFO http-nio-5555-exec-1 (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/demo/service-app-manager/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-01-16 13:43:10,676:INFO http-nio-5555-exec-1 (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/demo/service-washmall-appointment/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-01-16 13:43:10,676:INFO http-nio-5555-exec-1 (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/demo/api-gateway/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-01-16 13:43:10,676:INFO http-nio-5555-exec-1 (AbstractUrlHandlerMapping.java:362) - Mapped URL path [/demo/service-smart-talk/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2018-01-16 13:43:11,687:INFO http-nio-5555-exec-1 (AccessFilter.java:144) - 4766d8452c53827af3f96f67a6738534---------dff194c04cdab2b10d06a32e05b5a40e, sign error!
+2018-01-16 13:43:35,448:INFO http-nio-5555-exec-2 (AccessFilter.java:189) - apiLog - {"cuid":"ormn7t1gM-1Tuf-y_AzclAB3tyKk","appType":"b2bMall","ip":"0:0:0:0:0:0:0:1","parameter":{"account":"test3","password":"123456"},"client":"wx","gps":"0,0,0","uri":"/demo/user/regist","user":"","version":"v4.2.0","timestamp":1511946944436}
+2018-01-16 13:43:35,456:INFO http-nio-5555-exec-2 (AbstractApplicationContext.java:582) - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7607cb63: startup date [Tue Jan 16 13:43:35 CST 2018]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@158f4cfe
+2018-01-16 13:43:35,537:INFO http-nio-5555-exec-2 (AutowiredAnnotationBeanPostProcessor.java:155) - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-16 13:43:35,856:INFO http-nio-5555-exec-2 (ChainedDynamicProperty.java:115) - Flipping property: demo-service-user.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2018-01-16 13:43:35,886:INFO http-nio-5555-exec-2 (ShutdownEnabledTimer.java:58) - Shutdown hook installed for: NFLoadBalancer-PingTimer-demo-service-user
+2018-01-16 13:43:35,935:INFO http-nio-5555-exec-2 (BaseLoadBalancer.java:185) - Client:demo-service-user instantiated a LoadBalancer:DynamicServerListLoadBalancer:{NFLoadBalancer:name=demo-service-user,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2018-01-16 13:43:35,941:INFO http-nio-5555-exec-2 (DynamicServerListLoadBalancer.java:214) - Using serverListUpdater PollingServerListUpdater
+2018-01-16 13:43:36,001:INFO http-nio-5555-exec-2 (ChainedDynamicProperty.java:115) - Flipping property: demo-service-user.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2018-01-16 13:43:36,005:INFO http-nio-5555-exec-2 (DynamicServerListLoadBalancer.java:150) - DynamicServerListLoadBalancer for client demo-service-user initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=demo-service-user,current list of Servers=[10.0.0.81:10030],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:10.0.0.81:10030;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@5d309d6a
+2018-01-16 13:43:36,953:INFO PollingServerListUpdater-0 (ChainedDynamicProperty.java:115) - Flipping property: demo-service-user.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2018-01-16 13:43:41,469:WARN http-nio-5555-exec-2 (SendErrorFilter.java:70) - Error during filtering
+com.netflix.zuul.exception.ZuulException: Forwarding error
+	at org.springframework.cloud.netflix.zuul.filters.route.RibbonRoutingFilter.handleException(RibbonRoutingFilter.java:170) ~[spring-cloud-netflix-core-1.2.6.RELEASE.jar:1.2.6.RELEASE]
+	at org.springframework.cloud.netflix.zuul.filters.route.RibbonRoutingFilter.forward(RibbonRoutingFilter.java:145) ~[spring-cloud-netflix-core-1.2.6.RELEASE.jar:1.2.6.RELEASE]
+	at org.springframework.cloud.netflix.zuul.filters.route.RibbonRoutingFilter.run(RibbonRoutingFilter.java:88) ~[spring-cloud-netflix-core-1.2.6.RELEASE.jar:1.2.6.RELEASE]
+	at com.netflix.zuul.ZuulFilter.runFilter(ZuulFilter.java:112) [zuul-core-1.3.0.jar:1.3.0]
+	at com.netflix.zuul.FilterProcessor.processZuulFilter(FilterProcessor.java:193) [zuul-core-1.3.0.jar:1.3.0]
+	at com.netflix.zuul.FilterProcessor.runFilters(FilterProcessor.java:157) [zuul-core-1.3.0.jar:1.3.0]
+	at com.netflix.zuul.FilterProcessor.route(FilterProcessor.java:118) [zuul-core-1.3.0.jar:1.3.0]
+	at com.netflix.zuul.ZuulRunner.route(ZuulRunner.java:96) [zuul-core-1.3.0.jar:1.3.0]
+	at com.netflix.zuul.http.ZuulServlet.route(ZuulServlet.java:116) [zuul-core-1.3.0.jar:1.3.0]
+	at com.netflix.zuul.http.ZuulServlet.service(ZuulServlet.java:81) [zuul-core-1.3.0.jar:1.3.0]
+	at org.springframework.web.servlet.mvc.ServletWrappingController.handleRequestInternal(ServletWrappingController.java:157) [spring-webmvc-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.cloud.netflix.zuul.web.ZuulController.handleRequest(ZuulController.java:44) [spring-cloud-netflix-core-1.2.6.RELEASE.jar:1.2.6.RELEASE]
+	at org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:50) [spring-webmvc-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) [spring-webmvc-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897) [spring-webmvc-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) [spring-webmvc-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872) [spring-webmvc-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) [spring-webmvc-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.springframework.boot.web.filter.ApplicationContextHeaderFilter.doFilterInternal(ApplicationContextHeaderFilter.java:55) [spring-boot-1.5.3.RELEASE.jar:1.5.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.springframework.boot.actuate.trace.WebRequestTraceFilter.doFilterInternal(WebRequestTraceFilter.java:110) [spring-boot-actuator-1.5.3.RELEASE.jar:1.5.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105) [spring-web-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) [spring-web-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) [spring-web-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:106) [spring-boot-actuator-1.5.3.RELEASE.jar:1.5.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_101]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_101]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.14.jar:8.5.14]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_101]
+Caused by: com.netflix.client.ClientException
+	at com.netflix.client.AbstractLoadBalancerAwareClient.executeWithLoadBalancer(AbstractLoadBalancerAwareClient.java:123) ~[ribbon-loadbalancer-2.2.0.jar:2.2.0]
+	at com.netflix.client.AbstractLoadBalancerAwareClient.executeWithLoadBalancer(AbstractLoadBalancerAwareClient.java:81) ~[ribbon-loadbalancer-2.2.0.jar:2.2.0]
+	at org.springframework.cloud.netflix.zuul.filters.route.support.AbstractRibbonCommand.run(AbstractRibbonCommand.java:96) ~[spring-cloud-netflix-core-1.2.6.RELEASE.jar:1.2.6.RELEASE]
+	at org.springframework.cloud.netflix.zuul.filters.route.support.AbstractRibbonCommand.run(AbstractRibbonCommand.java:42) ~[spring-cloud-netflix-core-1.2.6.RELEASE.jar:1.2.6.RELEASE]
+	at com.netflix.hystrix.HystrixCommand$2.call(HystrixCommand.java:301) ~[hystrix-core-1.5.6.jar:1.5.6]
+	at com.netflix.hystrix.HystrixCommand$2.call(HystrixCommand.java:297) ~[hystrix-core-1.5.6.jar:1.5.6]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:46) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:35) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.Observable.unsafeSubscribe(Observable.java:10211) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:51) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:35) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.Observable.unsafeSubscribe(Observable.java:10211) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.Observable.unsafeSubscribe(Observable.java:10211) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.Observable.unsafeSubscribe(Observable.java:10211) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.Observable.unsafeSubscribe(Observable.java:10211) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.Observable.unsafeSubscribe(Observable.java:10211) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.Observable.unsafeSubscribe(Observable.java:10211) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:51) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:35) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.Observable.unsafeSubscribe(Observable.java:10211) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeMap.call(OnSubscribeMap.java:48) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeMap.call(OnSubscribeMap.java:33) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.Observable.unsafeSubscribe(Observable.java:10211) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.Observable.unsafeSubscribe(Observable.java:10211) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.Observable.unsafeSubscribe(Observable.java:10211) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:51) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:35) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.Observable.subscribe(Observable.java:10307) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.Observable.subscribe(Observable.java:10274) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.BlockingOperatorToFuture.toFuture(BlockingOperatorToFuture.java:51) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.observables.BlockingObservable.toFuture(BlockingObservable.java:412) ~[rxjava-1.1.10.jar:1.1.10]
+	at com.netflix.hystrix.HystrixCommand.queue(HystrixCommand.java:377) ~[hystrix-core-1.5.6.jar:1.5.6]
+	at com.netflix.hystrix.HystrixCommand.execute(HystrixCommand.java:343) ~[hystrix-core-1.5.6.jar:1.5.6]
+	at org.springframework.cloud.netflix.zuul.filters.route.RibbonRoutingFilter.forward(RibbonRoutingFilter.java:139) ~[spring-cloud-netflix-core-1.2.6.RELEASE.jar:1.2.6.RELEASE]
+	... 67 more
+Caused by: java.lang.RuntimeException: java.net.SocketTimeoutException: Read timed out
+	at rx.exceptions.Exceptions.propagate(Exceptions.java:58) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.observables.BlockingObservable.blockForSingle(BlockingObservable.java:465) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.observables.BlockingObservable.single(BlockingObservable.java:342) ~[rxjava-1.1.10.jar:1.1.10]
+	at com.netflix.client.AbstractLoadBalancerAwareClient.executeWithLoadBalancer(AbstractLoadBalancerAwareClient.java:102) ~[ribbon-loadbalancer-2.2.0.jar:2.2.0]
+	at com.netflix.client.AbstractLoadBalancerAwareClient.executeWithLoadBalancer(AbstractLoadBalancerAwareClient.java:81) ~[ribbon-loadbalancer-2.2.0.jar:2.2.0]
+	at org.springframework.cloud.netflix.zuul.filters.route.support.AbstractRibbonCommand.run(AbstractRibbonCommand.java:96) ~[spring-cloud-netflix-core-1.2.6.RELEASE.jar:1.2.6.RELEASE]
+	at org.springframework.cloud.netflix.zuul.filters.route.support.AbstractRibbonCommand.run(AbstractRibbonCommand.java:42) ~[spring-cloud-netflix-core-1.2.6.RELEASE.jar:1.2.6.RELEASE]
+	at com.netflix.hystrix.HystrixCommand$2.call(HystrixCommand.java:301) ~[hystrix-core-1.5.6.jar:1.5.6]
+	at com.netflix.hystrix.HystrixCommand$2.call(HystrixCommand.java:297) ~[hystrix-core-1.5.6.jar:1.5.6]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:46) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:35) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.Observable.unsafeSubscribe(Observable.java:10211) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:51) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:35) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.Observable.unsafeSubscribe(Observable.java:10211) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.Observable.unsafeSubscribe(Observable.java:10211) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.Observable.unsafeSubscribe(Observable.java:10211) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.Observable.unsafeSubscribe(Observable.java:10211) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.Observable.unsafeSubscribe(Observable.java:10211) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.Observable.unsafeSubscribe(Observable.java:10211) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:51) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:35) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.Observable.unsafeSubscribe(Observable.java:10211) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeMap.call(OnSubscribeMap.java:48) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeMap.call(OnSubscribeMap.java:33) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.Observable.unsafeSubscribe(Observable.java:10211) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.Observable.unsafeSubscribe(Observable.java:10211) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.Observable.unsafeSubscribe(Observable.java:10211) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:51) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:35) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.Observable.subscribe(Observable.java:10307) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.Observable.subscribe(Observable.java:10274) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.BlockingOperatorToFuture.toFuture(BlockingOperatorToFuture.java:51) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.observables.BlockingObservable.toFuture(BlockingObservable.java:412) ~[rxjava-1.1.10.jar:1.1.10]
+	at com.netflix.hystrix.HystrixCommand.queue(HystrixCommand.java:377) ~[hystrix-core-1.5.6.jar:1.5.6]
+	at com.netflix.hystrix.HystrixCommand.execute(HystrixCommand.java:343) ~[hystrix-core-1.5.6.jar:1.5.6]
+	at org.springframework.cloud.netflix.zuul.filters.route.RibbonRoutingFilter.forward(RibbonRoutingFilter.java:139) ~[spring-cloud-netflix-core-1.2.6.RELEASE.jar:1.2.6.RELEASE]
+	... 67 more
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method) ~[?:1.8.0_101]
+	at java.net.SocketInputStream.socketRead(Unknown Source) ~[?:1.8.0_101]
+	at java.net.SocketInputStream.read(Unknown Source) ~[?:1.8.0_101]
+	at java.net.SocketInputStream.read(Unknown Source) ~[?:1.8.0_101]
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137) ~[httpcore-4.4.6.jar:4.4.6]
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153) ~[httpcore-4.4.6.jar:4.4.6]
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282) ~[httpcore-4.4.6.jar:4.4.6]
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138) ~[httpclient-4.5.3.jar:4.5.3]
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56) ~[httpclient-4.5.3.jar:4.5.3]
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259) ~[httpcore-4.4.6.jar:4.4.6]
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163) ~[httpcore-4.4.6.jar:4.4.6]
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:165) ~[httpclient-4.5.3.jar:4.5.3]
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273) ~[httpcore-4.4.6.jar:4.4.6]
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125) ~[httpcore-4.4.6.jar:4.4.6]
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272) ~[httpclient-4.5.3.jar:4.5.3]
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185) ~[httpclient-4.5.3.jar:4.5.3]
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89) ~[httpclient-4.5.3.jar:4.5.3]
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111) ~[httpclient-4.5.3.jar:4.5.3]
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185) ~[httpclient-4.5.3.jar:4.5.3]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83) ~[httpclient-4.5.3.jar:4.5.3]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108) ~[httpclient-4.5.3.jar:4.5.3]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.3.jar:4.5.3]
+	at org.springframework.cloud.netflix.ribbon.apache.RibbonLoadBalancingHttpClient.execute(RibbonLoadBalancingHttpClient.java:95) ~[spring-cloud-netflix-core-1.2.6.RELEASE.jar:1.2.6.RELEASE]
+	at org.springframework.cloud.netflix.ribbon.apache.RibbonLoadBalancingHttpClient.execute(RibbonLoadBalancingHttpClient.java:44) ~[spring-cloud-netflix-core-1.2.6.RELEASE.jar:1.2.6.RELEASE]
+	at com.netflix.client.AbstractLoadBalancerAwareClient$1.call(AbstractLoadBalancerAwareClient.java:109) ~[ribbon-loadbalancer-2.2.0.jar:2.2.0]
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$3$1.call(LoadBalancerCommand.java:303) ~[ribbon-loadbalancer-2.2.0.jar:2.2.0]
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$3$1.call(LoadBalancerCommand.java:287) ~[ribbon-loadbalancer-2.2.0.jar:2.2.0]
+	at rx.internal.util.ScalarSynchronousObservable$3.call(ScalarSynchronousObservable.java:231) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.util.ScalarSynchronousObservable$3.call(ScalarSynchronousObservable.java:228) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.Observable.unsafeSubscribe(Observable.java:10211) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeConcatMap$ConcatMapSubscriber.drain(OnSubscribeConcatMap.java:286) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeConcatMap$ConcatMapSubscriber.onNext(OnSubscribeConcatMap.java:144) ~[rxjava-1.1.10.jar:1.1.10]
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:185) ~[ribbon-loadbalancer-2.2.0.jar:2.2.0]
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:180) ~[ribbon-loadbalancer-2.2.0.jar:2.2.0]
+	at rx.Observable.unsafeSubscribe(Observable.java:10211) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:94) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:42) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.Observable.subscribe(Observable.java:10307) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.Observable.subscribe(Observable.java:10274) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.observables.BlockingObservable.blockForSingle(BlockingObservable.java:445) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.observables.BlockingObservable.single(BlockingObservable.java:342) ~[rxjava-1.1.10.jar:1.1.10]
+	at com.netflix.client.AbstractLoadBalancerAwareClient.executeWithLoadBalancer(AbstractLoadBalancerAwareClient.java:102) ~[ribbon-loadbalancer-2.2.0.jar:2.2.0]
+	at com.netflix.client.AbstractLoadBalancerAwareClient.executeWithLoadBalancer(AbstractLoadBalancerAwareClient.java:81) ~[ribbon-loadbalancer-2.2.0.jar:2.2.0]
+	at org.springframework.cloud.netflix.zuul.filters.route.support.AbstractRibbonCommand.run(AbstractRibbonCommand.java:96) ~[spring-cloud-netflix-core-1.2.6.RELEASE.jar:1.2.6.RELEASE]
+	at org.springframework.cloud.netflix.zuul.filters.route.support.AbstractRibbonCommand.run(AbstractRibbonCommand.java:42) ~[spring-cloud-netflix-core-1.2.6.RELEASE.jar:1.2.6.RELEASE]
+	at com.netflix.hystrix.HystrixCommand$2.call(HystrixCommand.java:301) ~[hystrix-core-1.5.6.jar:1.5.6]
+	at com.netflix.hystrix.HystrixCommand$2.call(HystrixCommand.java:297) ~[hystrix-core-1.5.6.jar:1.5.6]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:46) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:35) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.Observable.unsafeSubscribe(Observable.java:10211) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:51) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:35) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.Observable.unsafeSubscribe(Observable.java:10211) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.Observable.unsafeSubscribe(Observable.java:10211) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.Observable.unsafeSubscribe(Observable.java:10211) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.Observable.unsafeSubscribe(Observable.java:10211) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.Observable.unsafeSubscribe(Observable.java:10211) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.Observable.unsafeSubscribe(Observable.java:10211) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:51) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:35) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.Observable.unsafeSubscribe(Observable.java:10211) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeMap.call(OnSubscribeMap.java:48) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeMap.call(OnSubscribeMap.java:33) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.Observable.unsafeSubscribe(Observable.java:10211) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.Observable.unsafeSubscribe(Observable.java:10211) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.Observable.unsafeSubscribe(Observable.java:10211) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:51) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeDefer.call(OnSubscribeDefer.java:35) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.Observable.subscribe(Observable.java:10307) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.Observable.subscribe(Observable.java:10274) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.internal.operators.BlockingOperatorToFuture.toFuture(BlockingOperatorToFuture.java:51) ~[rxjava-1.1.10.jar:1.1.10]
+	at rx.observables.BlockingObservable.toFuture(BlockingObservable.java:412) ~[rxjava-1.1.10.jar:1.1.10]
+	at com.netflix.hystrix.HystrixCommand.queue(HystrixCommand.java:377) ~[hystrix-core-1.5.6.jar:1.5.6]
+	at com.netflix.hystrix.HystrixCommand.execute(HystrixCommand.java:343) ~[hystrix-core-1.5.6.jar:1.5.6]
+	at org.springframework.cloud.netflix.zuul.filters.route.RibbonRoutingFilter.forward(RibbonRoutingFilter.java:139) ~[spring-cloud-netflix-core-1.2.6.RELEASE.jar:1.2.6.RELEASE]
+	... 67 more
+2018-01-16 13:43:48,769:INFO http-nio-5555-exec-3 (AccessFilter.java:189) - apiLog - {"cuid":"ormn7t1gM-1Tuf-y_AzclAB3tyKk","appType":"b2bMall","ip":"0:0:0:0:0:0:0:1","parameter":{"account":"test3","password":"123456"},"client":"wx","gps":"0,0,0","uri":"/demo/user/regist","user":"","version":"v4.2.0","timestamp":1511946944436}
+2018-01-16 13:43:50,214:INFO http-nio-5555-exec-5 (AccessFilter.java:189) - apiLog - {"cuid":"ormn7t1gM-1Tuf-y_AzclAB3tyKk","appType":"b2bMall","ip":"0:0:0:0:0:0:0:1","parameter":{"account":"test3","password":"123456"},"client":"wx","gps":"0,0,0","uri":"/demo/user/regist","user":"","version":"v4.2.0","timestamp":1511946944436}

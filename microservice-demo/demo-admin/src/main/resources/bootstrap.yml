@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: demo-admin
+  profiles:
+    active: jsp,zuul
+  cloud:
+    config:
+      uri: http://localhost:8888
+#      username: root
+#      password: root
+      label: master
+      failFast: true

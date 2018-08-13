@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.com.bluemoon.admin.mapper.AdminSysMenuMapper" >
+  <resultMap id="BaseResultMap" type="cn.com.bluemoon.admin.domain.model.AdminSysMenu" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="menu_id" property="menuId" jdbcType="BIGINT" />
+    <result column="menu_code" property="menuCode" jdbcType="VARCHAR" />
+    <result column="menu_name" property="menuName" jdbcType="VARCHAR" />
+    <result column="menu_label" property="menuLabel" jdbcType="VARCHAR" />
+    <result column="ifleaf" property="ifleaf" jdbcType="VARCHAR" />
+    <result column="menu_level" property="menuLevel" jdbcType="INTEGER" />
+    <result column="display_order" property="displayOrder" jdbcType="INTEGER" />
+    <result column="function_path" property="functionPath" jdbcType="VARCHAR" />
+    <result column="function_desc" property="functionDesc" jdbcType="VARCHAR" />
+    <result column="menu_type" property="menuType" jdbcType="VARCHAR" />
+    <result column="icon_img" property="iconImg" jdbcType="VARCHAR" />
+    <result column="menu_url" property="menuUrl" jdbcType="VARCHAR" />
+    <result column="parents_id" property="parentsId" jdbcType="INTEGER" />
+    <result column="parents_code" property="parentsCode" jdbcType="VARCHAR" />
+    <result column="menu_seq" property="menuSeq" jdbcType="VARCHAR" />
+    <result column="app_code" property="appCode" jdbcType="VARCHAR" />
+    <result column="sys_code" property="sysCode" jdbcType="VARCHAR" />
+  </resultMap>
+  
+  <!-- 根据角色编码和菜单深度获取菜单列表 --> 
+	<select id="getMenuTree" parameterType="java.util.HashMap" resultType="cn.com.bluemoon.admin.domain.vo.SysMenuVo" > 
+	SELECT 
+		DISTINCT(msm.menu_id) as menuId,
+		msm.menu_code as menuCode,
+		msm.menu_name as menuName,
+		msm.menu_label as menuLabel,
+		msm.ifleaf as ifleaf,
+		msm.menu_level as menuLevel,
+		msm.display_order as displayOrder,
+		msm.function_path as functionPath,
+		msm.function_desc as functionDesc,
+		msm.menu_type as menuType,
+		msm.parents_id as parentsId,
+		msm.parents_code parentsCode,
+		msm.menu_seq menuSeq,
+		msm.app_code as appCode
+	FROM 
+		admin_sys_menu msm 
+		<if test="roles != null" >
+				INNER JOIN admin_sys_role_menu msrm ON msm.menu_id = msrm.menu_id 
+			where 
+				msm.menu_level = #{menuLevel,jdbcType=INTEGER} 
+				and msm.menu_type = 'pc' 
+	        	and msrm.role_id in
+        	<foreach item="item" index="index" collection="roles" open="(" separator="," close=")">
+				#{item}
+			</foreach>  
+			<if test="parentsId != 0" >
+	      		and msm.parents_id = #{parentsId,jdbcType=INTEGER} 
+	      	</if>
+      	</if>
+      	<if test="roles == null" >
+      		where 
+				msm.menu_level = #{menuLevel,jdbcType=INTEGER} 
+				and msm.menu_type = 'pc' 
+			<if test="parentsId != 0" >
+	      		and msm.parents_id = #{parentsId,jdbcType=INTEGER} 
+	      	</if>
+     		<!-- and msm.ifleaf = 0 -->
+     	</if>
+     	and msm.app_code in
+     	<foreach item="item" index="index" collection="appCode" open="(" separator="," close=")">
+			#{item}
+		</foreach>
+      	ORDER BY display_order asc 
+	</select>
+	
+	<!-- 根据角色编码和url检查权限是否正确 --> 
+	<select id="checkUrlAuth" parameterType="java.util.HashMap" resultType="java.lang.Integer" > 
+		SELECT
+			count(*)
+		FROM
+			admin_sys_role_menu mrm inner join 
+			admin_sys_menu msm on mrm.menu_id = msm.menu_id
+		WHERE
+			mrm.role_id IN 
+			<foreach item="item" index="index" collection="roles" open="(" separator="," close=")">
+				#{item}
+			</foreach> 
+		AND msm.function_path = #{functionPath,jdbcType=VARCHAR}
+		and msm.menu_type = 'pc' 
+	</select> 
+	<select id="getMenuTreeWithoutRole" parameterType="java.util.HashMap" resultType="cn.com.bluemoon.admin.domain.vo.SysMenuVo" > 
+		SELECT 
+			msm.menu_id as menuId,
+			msm.menu_code as menuCode,
+			msm.menu_name as menuName,
+			msm.menu_label as menuLabel,
+			msm.ifleaf as ifleaf,
+			msm.menu_level as menuLevel,
+			msm.display_order as displayOrder,
+			msm.function_path as functionPath,
+			msm.function_desc as functionDesc,
+			msm.menu_type as menuType,
+			msm.parents_id as parentsId,
+			msm.parents_code parentsCode,
+			msm.menu_seq menuSeq,
+			msm.app_code as appCode
+		FROM 
+			admin_sys_menu msm 
+	      	where 
+			msm.menu_level = #{menuLevel,jdbcType=INTEGER} 
+		    and msm.parents_id = #{parentsId,jdbcType=INTEGER} 
+	      	ORDER BY display_order asc 
+	</select>
+
+    <select id="queryMenuDataById" parameterType="java.util.HashMap" resultType="cn.com.bluemoon.admin.domain.vo.SysMenuVo">
+        SELECT
+			msm.menu_id as menuId,
+			msm.menu_code as menuCode,
+			msm.menu_name as menuName,
+			msm.menu_label as menuLabel,
+			msm.ifleaf as ifleaf,
+			msm.menu_level as menuLevel,
+			msm.display_order as displayOrder,
+			msm.function_path as functionPath,
+			msm.function_desc as functionDesc,
+			msm.menu_type as menuType,
+			msm.parents_id as parentsId,
+			msm.parents_code parentsCode,
+			msm.menu_seq menuSeq,
+			msm.app_code as appCode
+		FROM
+			admin_sys_menu msm
+	      	where 1=1
+           <if test="parentsId != null">
+           and   ( msm.parents_id = #{parentsId,jdbcType=INTEGER} or msm.menu_id =#{parentsId,jdbcType=INTEGER} )
+           </if>
+            <if test="menuCode != null">
+              and     msm.menu_code = #{menuCode,jdbcType=VARCHAR}
+            </if>
+            <if test="menuLabel">
+                and msm.menu_label like CONCAT('%',#{menuLabel,jdbcType=VARCHAR},'%')
+            </if>
+            ORDER BY display_order asc
+    </select>
+</mapper>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/microservice-demo/demo-common/demo-common.iml" filepath="$PROJECT_DIR$/microservice-demo/demo-common/demo-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-demo/demo-gateway/demo-gateway.iml" filepath="$PROJECT_DIR$/microservice-demo/demo-gateway/demo-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-base/microservice-base.iml" filepath="$PROJECT_DIR$/microservice-base/microservice-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-common/microservice-common.iml" filepath="$PROJECT_DIR$/microservice-common/microservice-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-demo/microservice-demo.iml" filepath="$PROJECT_DIR$/microservice-demo/microservice-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-framework.iml" filepath="$PROJECT_DIR$/microservice-framework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-tool/microservice-tool.iml" filepath="$PROJECT_DIR$/microservice-tool/microservice-tool.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-base/ms-base-config-server/ms-base-config-server.iml" filepath="$PROJECT_DIR$/microservice-base/ms-base-config-server/ms-base-config-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-common/ms-common-hibernate/ms-common-hibernate.iml" filepath="$PROJECT_DIR$/microservice-common/ms-common-hibernate/ms-common-hibernate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-common/ms-common-lock/ms-common-lock.iml" filepath="$PROJECT_DIR$/microservice-common/ms-common-lock/ms-common-lock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-common/ms-common-mongodb/ms-common-mongodb.iml" filepath="$PROJECT_DIR$/microservice-common/ms-common-mongodb/ms-common-mongodb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-common/ms-common-mybatis/ms-common-mybatis.iml" filepath="$PROJECT_DIR$/microservice-common/ms-common-mybatis/ms-common-mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-common/ms-common-redis/ms-common-redis.iml" filepath="$PROJECT_DIR$/microservice-common/ms-common-redis/ms-common-redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-common/ms-common-utils/ms-common-utils.iml" filepath="$PROJECT_DIR$/microservice-common/ms-common-utils/ms-common-utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-common/ms-common-zookeeper/ms-common-zookeeper.iml" filepath="$PROJECT_DIR$/microservice-common/ms-common-zookeeper/ms-common-zookeeper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-tool/mybatis-generator/mybatis-generator.iml" filepath="$PROJECT_DIR$/microservice-tool/mybatis-generator/mybatis-generator.iml" />
+    </modules>
+  </component>
+</project>

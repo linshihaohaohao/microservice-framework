@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: demo-service-user
+  profiles:
+    active: dev
+  cloud:
+    config:
+      uri: http://localhost:8888
+#      username: root
+#      password: root
+#      label: test
+      failFast: true
