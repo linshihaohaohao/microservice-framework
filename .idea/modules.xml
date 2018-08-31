@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/bevol-data/bevol-data.iml" filepath="$PROJECT_DIR$/bevol-data/bevol-data.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-demo/demo-admin/demo-admin.iml" filepath="$PROJECT_DIR$/microservice-demo/demo-admin/demo-admin.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservice-demo/demo-common/demo-common.iml" filepath="$PROJECT_DIR$/microservice-demo/demo-common/demo-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservice-demo/demo-gateway/demo-gateway.iml" filepath="$PROJECT_DIR$/microservice-demo/demo-gateway/demo-gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservice-base/microservice-base.iml" filepath="$PROJECT_DIR$/microservice-base/microservice-base.iml" />

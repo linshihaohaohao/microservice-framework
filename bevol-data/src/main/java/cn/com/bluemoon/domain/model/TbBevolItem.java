@@ -1,4 +1,4 @@
-package cn.com.bluemoon.admin.domain.model;
+package cn.com.bluemoon.domain.model;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -129,6 +129,27 @@ public class TbBevolItem {
 
     @Column(name = "data_type_str")
     private String dataTypeStr;
+
+    @Transient
+    private Object goodsExt;
+    @Transient
+    private Object doyen;
+
+    public Object getDoyen() {
+        return doyen;
+    }
+
+    public void setDoyen(Object doyen) {
+        this.doyen = doyen;
+    }
+
+    public Object getGoodsExt() {
+        return goodsExt;
+    }
+
+    public void setGoodsExt(Object goodsExt) {
+        this.goodsExt = goodsExt;
+    }
 
     /**
      * 质量

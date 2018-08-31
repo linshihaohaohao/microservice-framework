@@ -2,6 +2,8 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bevol-data" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bevol-data/src/main/resources/application.yml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/microservice-base" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/microservice-base/ms-base-config-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/microservice-base/ms-base-job-client" charset="UTF-8" />
@@ -20,5 +22,6 @@
     <file url="file://$PROJECT_DIR$/microservice-demo/demo-service-user" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/microservice-tool" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/microservice-tool/mybatis-generator" charset="UTF-8" />
+    <file url="PROJECT" charset="GBK" />
   </component>
 </project>

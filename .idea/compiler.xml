@@ -6,6 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="bevol-data" />
+        <module name="demo-admin" />
         <module name="demo-common" />
         <module name="demo-gateway" />
         <module name="ms-base-config-server" />
@@ -20,6 +22,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="bevol-data" target="1.8" />
       <module name="demo-admin" target="1.8" />
       <module name="demo-common" target="1.8" />
       <module name="demo-gateway" target="1.8" />

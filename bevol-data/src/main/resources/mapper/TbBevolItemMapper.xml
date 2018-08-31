@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.com.bluemoon.mapper.TbBevolItemMapper">
+  <resultMap id="BaseResultMap" type="cn.com.bluemoon.domain.model.TbBevolItem">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="version" jdbcType="BIGINT" property="version" />
+    <result column="status" jdbcType="SMALLINT" property="status" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="mid" jdbcType="VARCHAR" property="mid" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="alias" jdbcType="VARCHAR" property="alias" />
+    <result column="c_sort" jdbcType="VARCHAR" property="cSort" />
+    <result column="index_name" jdbcType="VARCHAR" property="indexName" />
+    <result column="hit_num" jdbcType="INTEGER" property="hitNum" />
+    <result column="approval" jdbcType="VARCHAR" property="approval" />
+    <result column="brand_id" jdbcType="VARCHAR" property="brandId" />
+    <result column="tstamap" jdbcType="VARCHAR" property="tstamap" />
+    <result column="grade" jdbcType="VARCHAR" property="grade" />
+    <result column="category" jdbcType="VARCHAR" property="category" />
+    <result column="alias_2" jdbcType="VARCHAR" property="alias2" />
+    <result column="remark3" jdbcType="VARCHAR" property="remark3" />
+    <result column="comment_num" jdbcType="INTEGER" property="commentNum" />
+    <result column="hidden_skin" jdbcType="VARCHAR" property="hiddenSkin" />
+    <result column="safety_1_num" jdbcType="VARCHAR" property="safety1Num" />
+    <result column="cps_search" jdbcType="VARCHAR" property="cpsSearch" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+    <result column="image_src" jdbcType="VARCHAR" property="imageSrc" />
+    <result column="company_english" jdbcType="VARCHAR" property="companyEnglish" />
+    <result column="company" jdbcType="VARCHAR" property="company" />
+    <result column="price" jdbcType="INTEGER" property="price" />
+    <result column="country" jdbcType="VARCHAR" property="country" />
+    <result column="sellPrice" jdbcType="INTEGER" property="sellprice" />
+    <result column="approval_date" jdbcType="TIMESTAMP" property="approvalDate" />
+    <result column="data_type_str" jdbcType="VARCHAR" property="dataTypeStr" />
+    <result column="capacity" jdbcType="VARCHAR" property="capacity" />
+  </resultMap>
+</mapper>

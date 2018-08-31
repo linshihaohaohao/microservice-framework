@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.com.bluemoon.mapper.TbItemEffectMapper" >
+  <resultMap id="BaseResultMap" type="cn.com.bluemoon.domain.model.TbItemEffect" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="idx" property="idx" jdbcType="BIGINT" />
+    <result column="version" property="version" jdbcType="BIGINT" />
+    <result column="status" property="status" jdbcType="SMALLINT" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+    <result column="mid" property="mid" jdbcType="VARCHAR" />
+    <result column="composition_ids" property="compositionIds" jdbcType="VARCHAR" />
+    <result column="num" property="num" jdbcType="INTEGER" />
+    <result column="unit" property="unit" jdbcType="VARCHAR" />
+    <result column="effectId" property="effectid" jdbcType="VARCHAR" />
+    <result column="display_name" property="displayName" jdbcType="VARCHAR" />
+    <result column="compare_name" property="compareName" jdbcType="VARCHAR" />
+    <result column="display_type" property="displayType" jdbcType="VARCHAR" />
+    <result column="display_compare_name" property="displayCompareName" jdbcType="VARCHAR" />
+    <result column="display_compare_sort" property="displayCompareSort" jdbcType="INTEGER" />
+    <result column="display_compare" property="displayCompare" jdbcType="INTEGER" />
+    <result column="display_composition" property="displayComposition" jdbcType="VARCHAR" />
+  </resultMap>
+</mapper>

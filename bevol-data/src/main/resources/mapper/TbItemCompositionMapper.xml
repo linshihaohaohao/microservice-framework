@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.com.bluemoon.mapper.TbItemCompositionMapper" >
+  <resultMap id="BaseResultMap" type="cn.com.bluemoon.domain.model.TbItemComposition" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="idx" property="idx" jdbcType="BIGINT" />
+    <result column="version" property="version" jdbcType="BIGINT" />
+    <result column="status" property="status" jdbcType="SMALLINT" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+    <result column="mid" property="mid" jdbcType="VARCHAR" />
+    <result column="bevol_id" property="bevolId" jdbcType="INTEGER" />
+    <result column="bevol_src_id" property="bevolSrcId" jdbcType="INTEGER" />
+    <result column="title" property="title" jdbcType="VARCHAR" />
+    <result column="english" property="english" jdbcType="VARCHAR" />
+    <result column="efficacy" property="efficacy" jdbcType="VARCHAR" />
+    <result column="frequency" property="frequency" jdbcType="INTEGER" />
+    <result column="active" property="active" jdbcType="VARCHAR" />
+    <result column="acne_risk" property="acneRisk" jdbcType="VARCHAR" />
+    <result column="cas" property="cas" jdbcType="VARCHAR" />
+    <result column="other_title" property="otherTitle" jdbcType="VARCHAR" />
+    <result column="remark" property="remark" jdbcType="VARCHAR" />
+    <result column="shen_yong" property="shenYong" jdbcType="VARCHAR" />
+    <result column="used_num" property="usedNum" jdbcType="VARCHAR" />
+    <result column="used" property="used" jdbcType="VARCHAR" />
+    <result column="useds" property="useds" jdbcType="VARCHAR" />
+    <result column="cur_used_name" property="curUsedName" jdbcType="VARCHAR" />
+    <result column="safety" property="safety" jdbcType="VARCHAR" />
+    <result column="used_title" property="usedTitle" jdbcType="VARCHAR" />
+    <result column="cm_title" property="cmTitle" jdbcType="VARCHAR" />
+    <result column="cm_english" property="cmEnglish" jdbcType="VARCHAR" />
+  </resultMap>
+</mapper>
