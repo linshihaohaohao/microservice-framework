@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 /**
  * 通用响应model
- * @author xj.z
+ * @author linshihao
  * @version 1.0
  */
 public class BaseResponse implements Serializable{

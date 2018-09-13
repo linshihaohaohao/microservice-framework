@@ -45,7 +45,7 @@ import java.util.Properties;
 /**
  * MyBatis基础配置
  *
- * @author mijun
+ * @author linshihao
  *
  */
 @Configuration

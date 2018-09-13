@@ -1,15 +1,12 @@
 package cn.com.bluemoon.admin.service;
 
-import java.util.Date;
-import java.util.List;
-
 import cn.com.bluemoon.admin.domain.model.AdminSysLogInfo;
 
 
 
 /**
  * 日志操作类
- * @author mij
+ * @author linshihao
  *
  */
 public interface LogService {

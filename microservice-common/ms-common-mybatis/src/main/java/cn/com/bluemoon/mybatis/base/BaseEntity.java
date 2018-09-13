@@ -29,7 +29,7 @@ import javax.persistence.*;
 /**
  * 基础信息
  *
- * @author mijun
+ * @author linshihao
  * @since 2016-10-08 11:42
  */
 public class BaseEntity {

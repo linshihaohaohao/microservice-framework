@@ -30,7 +30,7 @@ import tk.mybatis.mapper.common.MySqlMapper;
 /**
  * 继承自己的BaseMapper
  *
- * @author mijun
+ * @author linshihao
  *
  */
 public interface BaseMapper<T> extends Mapper<T>, MySqlMapper<T> {

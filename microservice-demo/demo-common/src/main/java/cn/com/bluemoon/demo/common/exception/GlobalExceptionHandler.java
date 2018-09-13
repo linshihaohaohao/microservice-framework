@@ -16,7 +16,7 @@ import net.sf.json.JSONException;
 
 /**
  * 全局异常处理
- * @author xj.z
+ * @author linshihao
  * @version 1.0
  */
 @ControllerAdvice
