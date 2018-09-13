@@ -24,7 +24,7 @@
 
 package cn.com.bluemoon.mybatis.base;
 
-import javax.persistence.*;
+import javax.persistence.Transient;
 
 /**
  * 基础信息

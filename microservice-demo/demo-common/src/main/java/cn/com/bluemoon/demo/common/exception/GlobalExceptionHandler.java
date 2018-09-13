@@ -1,18 +1,15 @@
 package cn.com.bluemoon.demo.common.exception;
 
-import javax.servlet.http.HttpServletRequest;
-
+import cn.com.bluemoon.demo.common.domain.BaseResponse;
+import com.fasterxml.jackson.core.JsonParseException;
+import net.sf.json.JSONException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import cn.com.bluemoon.demo.common.domain.BaseResponse;
-
-import com.fasterxml.jackson.core.JsonParseException;
-
-import net.sf.json.JSONException;
+import javax.servlet.http.HttpServletRequest;
 
 /**
  * 全局异常处理

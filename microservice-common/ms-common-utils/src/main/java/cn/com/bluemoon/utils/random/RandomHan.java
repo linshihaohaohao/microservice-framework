@@ -5,7 +5,7 @@ import java.util.Random;
 
 /**
  * 随机生成汉字
- * 
+ *
  * @author linshihao
  *
  */
